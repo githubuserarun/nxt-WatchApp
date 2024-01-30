@@ -56,9 +56,7 @@ class HomeRoute extends Component {
 
           return (
             <BgContainer bgColor={bgColor}>
-              <HomeSticky>
-                <Header />
-              </HomeSticky>
+              <Header />
               <BodyContent>
                 <HomeSticky>
                   <SideBar />

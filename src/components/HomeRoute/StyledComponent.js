@@ -9,12 +9,14 @@ export const BgContainer = styled.div`
 `
 export const BodyContent = styled.div`
   display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
   gap: 8px;
 `
 export const BannerBg = styled.div`
   background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png');
   background-size: cover;
-  width: 70vw;
   height: 200px;
   padding-left: 20px;
   display: flex;
@@ -41,6 +43,10 @@ export const BannerGetBtn = styled.button`
 `
 export const HomeSticky = styled.div`
   position: sticky;
+  @media (max-width: 768px) {
+    height: 30px;
+    position: static;
+  }
 `
 export const HomeVideoContainer = styled.div`
   display: flex;

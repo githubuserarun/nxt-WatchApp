@@ -5,6 +5,9 @@ export const HomeContainer = styled.div`
   display: flex;
   flex-direction: row;
   width: 100vw;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const ProductsLoaderContainer = styled.div`
@@ -23,6 +26,9 @@ export const VideoDetailsSideContainer = styled.div`
   padding: 30px;
   width: 100%;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    padding: 0px;
+  }
 `
 
 export const VideoDetailsTextContainer = styled.div`
@@ -31,6 +37,9 @@ export const VideoDetailsTextContainer = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   width: 90%;
+  @media screen and (max-width: 768px) {
+    align-items: center;
+  }
 `
 
 export const VideoDetailsTitle = styled.p`
@@ -78,6 +87,9 @@ export const ChannelContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    align-items: flex-start;
+  }
 `
 export const ChannelLogo = styled.img`
   height: 50px;

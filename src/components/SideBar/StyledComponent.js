@@ -10,11 +10,22 @@ export const SideBarContainer = styled.div`
   position: sticky;
   position: -webkit-sticky;
   background-color: ${props => props.bgColor};
+  @media (max-width: 768px) {
+    flex-direction: row;
+    height: fit-content;
+    width: 100vw;
+  }
 `
 
 export const NavItemsContainer = styled.div`
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+    flex-direction: row;
+    height: 30px;
+    width: 100vw;
+    overflow-x: scroll;
+  }
 `
 export const TextItemContainer = styled.div`
   display: flex;
@@ -23,6 +34,9 @@ export const TextItemContainer = styled.div`
   background-color: ${props => props.isActive};
   width: 100%;
   cursor: pointer;
+  @media (max-width: 768px) {
+    height: 30px;
+  }
 `
 export const ItemText = styled.p`
   font-family: 'Roboto';
@@ -38,6 +52,9 @@ export const SideBarBottomContainer = styled.div`
   justify-content: center;
   height: 100px;
   margin-bottom: 30px;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const BottomText = styled.p`
@@ -68,4 +85,8 @@ export const NavLink = styled(Link)`
   font-weight: 600;
   margin-bottom: 15px;
   color: ${props => props.color};
+  @media (max-width: 768px) {
+    font-weight: normal;
+    margin-bottom: 0px;
+  }
 `

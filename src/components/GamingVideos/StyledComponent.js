@@ -13,6 +13,9 @@ export const VideoCardContainer = styled.li`
   border-bottom: 1px solid #000000;
   padding-bottom: 10px;
   height: 400px;
+  @media screen and (max-width: 768px) {
+    margin: 0px;
+  }
 `
 
 export const ThumbnailImage = styled.img`

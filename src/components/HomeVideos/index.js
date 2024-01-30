@@ -11,6 +11,7 @@ import {
   LoaderContainer,
   UlElenemt,
   SearchInput,
+  SearchButton,
 } from './StyledComponent'
 
 const apiStatusConstants = {
@@ -119,9 +120,9 @@ class HomeVideos extends Component {
       <HomeVideoContainer>
         <SearchContainer>
           <SearchInput type="search" onChange={this.onSearchInput} />
-          <button type="button" onClick={this.getData}>
+          <SearchButton type="button" onClick={this.getData}>
             <GoSearch size="30" />
-          </button>
+          </SearchButton>
         </SearchContainer>
         <div>{this.renderHomeVideos()}</div>
       </HomeVideoContainer>

@@ -77,11 +77,13 @@ class LoginRoute extends Component {
             <img
               width="200px"
               src="https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png"
-              alt="logo"
+              alt="website logo"
             />
           </ImgContainer>
           <UserDetails>
-            <Label htmlFor="username">USERNAME</Label>
+            <Label htmlFor="username">
+              USERNAME<span>(rahul)</span>
+            </Label>
             <Input
               id="username"
               value={userName}
@@ -91,7 +93,9 @@ class LoginRoute extends Component {
             />
           </UserDetails>
           <UserDetails>
-            <Label htmlFor="username">PASSWORD</Label>
+            <Label htmlFor="username">
+              PASSWORD<span>(rahul@2021)</span>
+            </Label>
             <Input
               id="password"
               value={passWord}

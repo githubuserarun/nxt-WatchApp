@@ -81,6 +81,9 @@ export const HomeContainer = styled.div`
   flex-direction: row;
   width: 100vw;
   background-color: ${props => props.bgColor};
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const NotFoundContainer = styled.div`

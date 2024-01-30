@@ -46,7 +46,7 @@ export const Button = styled.button`
   border: none;
   border-radius: 5px;
   padding: 10px;
-  color: white;
+  color: #ffffff;
 `
 export const ImgContainer = styled.div`
   text-align: center;

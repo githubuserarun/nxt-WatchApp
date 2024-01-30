@@ -24,6 +24,9 @@ export const VideosContainer = styled.ul`
   flex-direction: column;
   height: 55vh;
   list-style-type: none;
+  @media screen and (max-width: 768px) {
+    padding: 0px;
+  }
 `
 
 export const TrendingHeadContainer = styled.div`
@@ -81,6 +84,9 @@ export const HomeContainer = styled.div`
   flex-direction: row;
   width: 100vw;
   background-color: ${props => props.bgColor};
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const NavLink = styled(Link)`
